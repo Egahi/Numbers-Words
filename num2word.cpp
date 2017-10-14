@@ -1,5 +1,5 @@
 /***
- * num2wordconverter.cpp
+ * num2word.cpp
  *
  * this program takes a numerical value in digits and prints it out in words
  *
