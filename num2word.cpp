@@ -1,47 +1,43 @@
 /***
  * num2word.cpp
  *
- * this program takes a numerical value in digits and prints it out in words
+ * this program takes a positive integer in digits and prints it out in words
  *
  * @s_egahi
  *
- * this is num2wordconverter.
+ * this is num2word.
  */
 
 #include <iostream>
 
-#include "eConvert.h"
+#include "num2word.h"
 
 using namespace std;
 
 int main(void)
 {
-    // variable to get and hold number from user
-    long long input;
-    
-    cout << "Number: ";
-    cin >> input;
-    
-    // accept only numbers between 0 and 999 999 999 999
-    while (input < MIN || input > MAX)
-    {
-        cout << "Enter a number between 0 and " << MAX << endl;
-        cout << "Number: ";
-        cin >> input;
-    }
+			do
+			{
+			    // welcome user
+			    welcome();
+
+		     // get number from user
+        getInput();
         
-    // separate digits of input into distinct numbers
-    splitNum(&input);
+        // separate digits of input into distinct numbers
+        splitNum();
 
-    // convert each distinct number to word if number is 0, quit
-    if (!numToWord())   
-        return 0;
+        // convert each distinct number to word if number is 0, quit
+        numToWord();   
 
-    // assign place value to each distinct number
-    placeValues();     
+        // assign place value to each distinct number
+        placeValues();     
 
-    // print out digits converted to words    
-    print();
+        // print out digits converted to words    
+        print();
+				
+        // prompt to run again
+			} while (runAgain());
 
     return 0;
 }
