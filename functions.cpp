@@ -95,11 +95,11 @@ bool numToWord(void)
                 // isolate tens digit
                 int tens = digits[i] / 10;
 
-											// convert tens digit to words
+		// convert tens digit to words
                 tensConverter(&tens, &i);
 
-											// convert numbers unit digit to words												
-											oneNineteen(unit, &i);
+		// convert numbers unit digit to words												
+		oneNineteen(unit, &i);
             }
         }
     }
