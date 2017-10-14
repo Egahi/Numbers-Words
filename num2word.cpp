@@ -1,4 +1,4 @@
-/***
+/**
  * num2word.cpp
  *
  * this program takes a positive integer in digits and prints it out in words
