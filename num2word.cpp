@@ -16,28 +16,28 @@ using namespace std;
 
 int main(void)
 {
-			do
-			{
-			    // welcome user
-			    welcome();
+	do
+	{
+		// welcome user
+		welcome();
 
-		     // get number from user
-        getInput();
-        
-        // separate digits of input into distinct numbers
-        splitNum();
+		// get number from user
+		getInput();
 
-        // convert each distinct number to word if number is 0, quit
-        numToWord();   
+		// separate digits of input into distinct numbers
+		splitNum();
 
-        // assign place value to each distinct number
-        placeValues();     
+		// convert each distinct number to word if number is 0, quit
+		numToWord();   
 
-        // print out digits converted to words    
-        print();
-				
-        // prompt to run again
-			} while (runAgain());
+		// assign place value to each distinct number
+		placeValues();     
+
+		// print out digits converted to words    
+		print();
+
+		// prompt to run again
+	} while (runAgain());
 
     return 0;
 }
