@@ -129,7 +129,7 @@ bool numToWord(void)
 
 	for (int i = MIN; i <= length; i++)
 	{
-		// if any digit of number is greater than 0, increament check and exit loop
+		// if any digit of number is greater than 0, increment check and exit loop
 		if (digits[i] > MIN)
 		{
 			check += 1;
@@ -166,7 +166,7 @@ bool numToWord(void)
 				// convert tens digit to words
 				tensConverter(&tens, &i);
 
-				// convert numbers unit digit to words
+				// convert unit digit to words
 				oneNineteen(unit, &i);
 			}
 		}
