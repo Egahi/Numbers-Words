@@ -1,3 +1,6 @@
+#ifndef _NUM2WORDS_H_
+#define _NUM2WORDS_H_
+
 #define MAX 999999999999
 #define MIN 0
 #define LIMIT 8
@@ -21,3 +24,5 @@ void oneNineteen(int, int *);
 void tensConverter (int *, int *);
 
 bool runAgain(void);
+
+#endif
